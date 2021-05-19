@@ -18,7 +18,6 @@ def doOp(var1, var2, op):
 	return int(res*10000)/10000 # округляем до 5 знаков после запятой
 
 fullPath = os.getcwd()
-print(fullPath)
 fname = input('вводите имя файла(по умолчанию inp.txt):')
 if len(fname)==0:
     fname = 'inp.txt'
