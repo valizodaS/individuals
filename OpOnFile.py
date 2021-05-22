@@ -35,7 +35,9 @@ while line:
 	var1 = float(s[0])
 	var2 = float(s[1])
 	res = doOp(var1, var2, op)
-	if float(res) >= 0:
+	if res=='div by zero':
+		fPos.write(str(i)+') ' + res+'\n')
+	elif float(res) >= 0:
 		fPos.write(str(i)+') ' + str(res)+'\n')
 	else:
 		fNeg.write(str(i)+') ' + str(res)+'\n')
